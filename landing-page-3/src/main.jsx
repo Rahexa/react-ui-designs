@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 
-import Navbar from './components/NavBar'   // ✅ Capital
+import Navbar from './components/NavBar'
 import Hero from './components/Hero'
 import Features from './components/Features'
 import CIA from './components/CIA'
