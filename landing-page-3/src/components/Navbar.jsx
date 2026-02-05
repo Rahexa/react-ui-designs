@@ -1,4 +1,4 @@
-const Navbar = ()=>{
+const navbar = ()=>{
 
 
 const HandleLogoClick = ()=>{
@@ -50,4 +50,4 @@ return (
 
 }
 
-export default Navbar;
+export default navbar;
