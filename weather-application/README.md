@@ -7,7 +7,8 @@ A beautiful and responsive weather application built with React that displays cu
 - 🌤️ Real-time weather data
 - 🔍 Search for any city worldwide
 - 📱 Responsive design for all devices
-- 🎨 Beautiful glassmorphism UI
+- 🎨 Beautiful glassmorphism UI with Tailwind CSS
+- ⚡ Fast and modern styling with utility classes
 - 📊 Detailed weather information including:
   - Current temperature
   - Feels like temperature
@@ -73,9 +74,9 @@ src/
 ## Technologies Used
 
 - **React 18** - JavaScript library for building user interfaces
+- **Tailwind CSS** - Utility-first CSS framework for styling
 - **Axios** - HTTP client for API requests
 - **OpenWeatherMap API** - Weather data provider
-- **CSS3** - Styling with glassmorphism effects
 
 ## Learning Objectives
 
@@ -94,7 +95,8 @@ This project demonstrates several key React concepts:
 
 You can customize the application by:
 
-- Modifying the color scheme in `index.css`
+- Modifying the Tailwind classes for different color schemes
+- Adding custom Tailwind utilities in the CSS file
 - Adding more weather details to the WeatherCard component
 - Implementing weather forecast functionality
 - Adding location-based weather detection

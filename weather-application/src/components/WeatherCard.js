@@ -30,42 +30,50 @@ const WeatherCard = ({ data }) => {
   };
 
   return (
-    <div className="weather-card">
-      <h2 className="city-name">
+    <div className="text-center animate-fade-in">
+      <h2 className="text-3xl md:text-4xl font-bold mb-3 drop-shadow-md">
         📍 {city}, {country}
       </h2>
       
-      <div className="weather-icon">
+      <div className="text-6xl my-6">
         {getWeatherEmoji(icon)}
       </div>
       
-      <div className="temperature">
+      <div className="text-6xl md:text-7xl font-bold my-6 drop-shadow-lg">
         {Math.round(temperature)}°C
       </div>
       
-      <div className="weather-description">
+      <div className="text-2xl mb-8 capitalize opacity-90">
         {description}
       </div>
       
-      <div className="weather-details">
-        <div className="detail-card">
-          <h3>Feels Like</h3>
-          <p>{Math.round(feelsLike)}°C</p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-8">
+        <div className="glass rounded-2xl p-5">
+          <h3 className="text-sm opacity-80 mb-2 uppercase tracking-wider font-medium">
+            Feels Like
+          </h3>
+          <p className="text-2xl font-semibold">{Math.round(feelsLike)}°C</p>
         </div>
         
-        <div className="detail-card">
-          <h3>Humidity</h3>
-          <p>{humidity}%</p>
+        <div className="glass rounded-2xl p-5">
+          <h3 className="text-sm opacity-80 mb-2 uppercase tracking-wider font-medium">
+            Humidity
+          </h3>
+          <p className="text-2xl font-semibold">{humidity}%</p>
         </div>
         
-        <div className="detail-card">
-          <h3>Wind Speed</h3>
-          <p>{windSpeed} m/s</p>
+        <div className="glass rounded-2xl p-5">
+          <h3 className="text-sm opacity-80 mb-2 uppercase tracking-wider font-medium">
+            Wind Speed
+          </h3>
+          <p className="text-2xl font-semibold">{windSpeed} m/s</p>
         </div>
         
-        <div className="detail-card">
-          <h3>Pressure</h3>
-          <p>{pressure} hPa</p>
+        <div className="glass rounded-2xl p-5">
+          <h3 className="text-sm opacity-80 mb-2 uppercase tracking-wider font-medium">
+            Pressure
+          </h3>
+          <p className="text-2xl font-semibold">{pressure} hPa</p>
         </div>
       </div>
     </div>
